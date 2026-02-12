@@ -1,9 +1,17 @@
+:root {
+    --primary-color: #BADA55; 
+    --background-color: #999; 
+    --card-background: #ddd; 
+    --accent-color: #008080; 
 
+    --spacing-md:1rem; 
+    --radius-sm:4px; 
+}
 
 body {
     font-family: system-ui, sans-serif;
     padding: 2rem;
-    background:/*add color here */ 
+    background:var(--background-color);
 }
 
 nav {
@@ -12,11 +20,11 @@ nav {
 }
 
 section {
-    background: 
+    background: var(--card-background);
     padding: 1rem;
     margin-top: 1.5rem;
     border-radius: 6px;
-    border: 1px solid /*add color here */ 
+    border: 1px solid var(--accent-color);
 }
 
 /* Grouping with :is() */
@@ -26,19 +34,19 @@ section {
 
 /* Exclusion with :not() */
 nav a:not(.highlight) {
-    color: /*add color here */ 
+    color: var(--accent-color); 
     text-decoration: none;
 }
 
 /* Accessible focus */
 a:focus-visible,
 button:focus-visible {
-    outline: 3px solid  /*add color here */ 
+    outline: 3px solid var(--accent-color);
     outline-offset: 2px;
 }
 
 /* Parent selection with :has() */
 section:has(button) {
-    border-left: 6px solid  /*add color here */ 
+    border-left: 6px solid var(--primary-color);
     padding-left: 1rem;
 }

@@ -68,3 +68,25 @@
         background-color: lightgray;
       }
   
+/* ========================
+     WITH REUSABLE COMPONENTS
+======================== */
+
+.btn {
+  padding: 0.75rem 1.25rem; 
+  border-radius: 4px;
+  font-weight: 600; 
+  border: none; 
+  cursor:pointer; 
+}
+
+.btn-primary {
+  background-color: #D05353;
+  color: #fff; 
+}
+
+.btn-warning {
+  background-color: red; 
+  color: #fff; 
+  border: 2px solid #000; 
+}
